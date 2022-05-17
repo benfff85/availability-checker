@@ -13,7 +13,7 @@ public class DummyAvailabilityChecker implements AvailabilityChecker{
     @Override
     public CheckerResponse checkAvailability() {
         log.info("Running check via DummyAvailabilityChecker");
-        return CheckerResponse.builder().availability(AVAILABLE).url("ABC").build();
+        return CheckerResponse.builder().availability(AVAILABLE).url("https://www.costco.com").build();
     }
 
 }
