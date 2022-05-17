@@ -23,7 +23,7 @@ public class AvailabilityCheckerScheduler {
         this.alerter = alerter;
     }
 
-    @Scheduled(fixedDelay = 300000L)
+    @Scheduled(fixedDelayString = "${checker.poll-frequency-in-millis}")
     public void test() {
         log.info("Running scheduled availability check");
         CheckerResponse response = checker.checkAvailability();
