@@ -21,11 +21,10 @@ public class EmailAlerter implements AvailabilityAlerter {
         log.info("Alerting via email");
         SimpleMailMessage message = new SimpleMailMessage();
         message.setFrom("noreply@abc.com");
-        message.setTo("ben.ferenchak@gmail.com");
+        message.setTo("ben.ferenchak@gmail.com", "4842744202@vmobl.com");
         message.setSubject("Costco Baby Formula Availability: " + availability);
         message.setText("Costco Baby Formula Availability: " + availability + "\nURL: " + url);
         sender.send(message);
-
     }
 
 }
