@@ -9,7 +9,7 @@ import org.springframework.context.annotation.Configuration;
 public class SeleniumConfig {
 
     static {
-        System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver");
     }
 
     @Bean
